@@ -1,4 +1,4 @@
-package com.example.FIBO.retry;
+package com.example.retry;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
@@ -27,8 +27,22 @@ import org.slf4j.LoggerFactory;
  *   <li>Detailed logging and metrics hooks</li>
  * </ul>
  * 
- * @author Your Name
- * @version 2.0
+ * @author norelhodabarkat
+ * @version 1.0
+ */
+/**
+ * <p><b>Usage Exam</b>
+ * <pre>{@code
+ * FibonacciBackoffService service = new FibonacciBackoffService(5, 100);
+ * try {
+ *     String result = service.executeWithRetry(() -> {
+ *         // Your business logic
+ *         return "Success";
+ *     });
+ * } catch (RetryException e) {
+ *     // Handle failure
+ * }
+ * }</pre>
  */
 public class FibonacciBackoffService {
 

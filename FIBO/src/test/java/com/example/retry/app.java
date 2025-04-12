@@ -1,4 +1,4 @@
-package com.example.FIBO.retry;
+package com.example.retry;
 
 import java.util.concurrent.Callable;
 import org.slf4j.Logger;

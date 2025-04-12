@@ -1,4 +1,4 @@
-package com.example.FIBO.retry;
+package com.example.retry;
 
 import org.openjdk.jmh.annotations.*;
 

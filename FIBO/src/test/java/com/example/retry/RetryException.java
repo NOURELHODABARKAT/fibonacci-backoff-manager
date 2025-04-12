@@ -1,4 +1,4 @@
-package com.example.FIBO.retry;
+package com.example.retry;
 
 public class RetryException extends Exception {
     public RetryException(String message) {
